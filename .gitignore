@@ -1,0 +1,63 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
+
+# Local credentials and temporary scripts
+_tmp_lookup_ids.py
+**/*secret*
+**/*credential*
+
+# Runtime output and logs
+runtime-logs/
+**/runtime-logs/
+*.log
+*.err.log
+**/*.log
+**/*.err.log
+
+# Dependencies and generated output
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+**/build/
+coverage/
+**/coverage/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.tsbuildinfo
+.pnpm-store/
+**/.pnpm-store/
+.cache/
+**/.cache/
+.playwright-mcp/
+**/.playwright-mcp/
+
+# IDE and OS files
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+.DS_Store
+Thumbs.db
+
+# Local project instructions and worktrees
+AGENTS.md
+**/AGENTS.md
+.agents/worktrees/
+**/.agents/worktrees/
+.worktrees/
+**/.worktrees/
+
+# Downloaded archives and incomplete nested repositories
+deepseek/deepseek-harness-incomplete-git/
+deepseek/*.zip
+deepseek/新建 文本文档.txt

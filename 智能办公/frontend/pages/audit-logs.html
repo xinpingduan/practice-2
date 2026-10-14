@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>操作审计 · 员工管理中心</title>
+  <link rel="stylesheet" href="../css/style.css?v=57">
+  <link rel="stylesheet" href="../css/ui-system.css?v=28">
+</head>
+<body data-access="super-admin" class="access-pending">
+  <header class="hero">
+    <div class="hero-content">
+      <a class="brand" href="../index.html" aria-label="员工管理">EM</a>
+      <div class="hero-copy"><p class="eyebrow">SECURITY &amp; GOVERNANCE</p><h1>操作审计</h1><p>追踪关键写操作，支持按操作者和接口筛选。</p></div>
+      <nav class="nav-links" aria-label="主导航"></nav>
+    </div>
+  </header>
+  <main class="page-container">
+    <section class="card">
+      <div class="section-title"><div><p class="eyebrow">IMMUTABLE AUDIT TRAIL</p><h2>审计记录</h2></div><button id="refresh-button" class="secondary-button" type="button">刷新</button></div>
+      <form id="filter-form" class="form-grid" novalidate>
+        <label><span>操作者工号</span><input id="actor-employee-no" type="search" placeholder="例如 ADMIN001"></label>
+        <label><span>接口名称</span><input id="action" type="search" placeholder="例如 api.departments"></label>
+        <div class="form-footer"><button type="submit">查询记录</button></div>
+      </form>
+      <p id="message" class="message" aria-live="polite"></p>
+      <div class="table-wrapper">
+        <table><thead><tr><th>时间</th><th>操作者</th><th>操作</th><th>方法</th><th>请求路径</th><th>结果</th><th>来源 IP</th><th>变更详情</th></tr></thead><tbody id="audit-list"></tbody></table>
+      </div>
+      <div class="button-group" style="margin-top: 18px"><button id="previous-page" class="secondary-button" type="button">上一页</button><span id="page-summary" class="description"></span><button id="next-page" class="secondary-button" type="button">下一页</button></div>
+    </section>
+  </main>
+  <script src="../js/auth.js?v=76"></script>
+  <script src="../js/api.js?v=21"></script>
+  <script src="../js/audit-logs.js?v=22"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

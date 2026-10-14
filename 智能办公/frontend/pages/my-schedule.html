@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>我的班次</title>
+  <link rel="stylesheet" href="../css/style.css?v=57">
+  <link rel="stylesheet" href="../css/ui-system.css?v=29">
+</head>
+<body data-access="logged-in" class="access-pending my-schedule-page">
+  <header class="hero"><div class="hero-content"><a class="brand" href="profile.html">EM</a><div class="hero-copy"><p class="eyebrow">MY SCHEDULE</p><h1>我的班次</h1><p>查看已发布班次；点击有班次的日期可申请班次调整或请假。</p></div><nav class="nav-links"></nav></div></header>
+  <main class="page-container">
+    <section class="card personal-calendar-card">
+      <div class="calendar-toolbar">
+        <div><p class="eyebrow">PERSONAL CALENDAR</p><h2 id="calendar-title">我的班次日历</h2><p class="calendar-subtitle">班次、请假与审批状态集中显示</p></div>
+        <div class="calendar-navigation" aria-label="月份导航"><button id="previous-month" class="calendar-nav-arrow" type="button" aria-label="上个月" title="上个月">‹</button><button id="today-month" class="secondary-button calendar-today" type="button">回到本月</button><button id="next-month" class="calendar-nav-arrow" type="button" aria-label="下个月" title="下个月">›</button></div>
+      </div>
+      <div class="calendar-insight-bar"><div id="calendar-stats" class="calendar-stats" aria-live="polite"></div><div class="calendar-request-legend" aria-label="日历状态图例"><span class="shift"><i></i>班次</span><span class="rest"><i></i>休息</span><span class="pending"><i></i>审批中</span><span class="approved"><i></i>已批准</span><span class="rejected"><i></i>已驳回</span></div></div>
+      <div id="shift-legend-personal" class="personal-shift-legend" aria-label="班次颜色图例"></div>
+      <div class="calendar-stage"><div id="calendar" class="monthly-calendar" aria-live="polite" aria-label="个人班次月历"></div></div>
+      <p class="calendar-help">点击有班次的日期可申请班次调整或请假；点击带审批状态的日期可查看处理意见。</p>
+    </section>
+    <section class="card"><div class="section-title"><div><p class="eyebrow">MY REQUESTS</p><h2>我的申请</h2></div></div><div id="my-request-list" class="request-list"><p class="empty-tip">加载中…</p></div></section>
+  </main>
+  <dialog id="request-dialog"><form id="request-form"><div class="dialog-heading"><div><p class="eyebrow">SCHEDULE REQUEST</p><h2 id="request-title">提交申请</h2><p id="request-date"></p></div><button type="button" class="icon-button" id="close-request" aria-label="关闭提交申请弹窗">×</button></div><label>申请类型<select id="request-type"><option value="shift_change">班次调整申请</option><option value="leave">请假申请</option></select></label><label id="desired-shift-label">目标班次<select id="desired-shift"></select></label><p class="form-hint">班次调整只修改你当天的班次；如需与其他员工互换，请在原因中注明对方并由经理核实。</p><label>申请原因<textarea id="request-reason" maxlength="500" required placeholder="请说明班次调整或请假原因"></textarea></label><div class="dialog-actions"><button type="button" id="cancel-request" class="secondary-button">取消</button><button type="submit" id="submit-request">提交审批</button></div></form></dialog>
+  <dialog id="request-detail-dialog" class="request-detail-dialog"><div class="request-detail-content"><div class="dialog-heading"><div><p class="eyebrow">REQUEST DETAILS</p><h2>申请详情</h2><p id="request-detail-date"></p></div><button type="button" class="icon-button" id="close-request-detail" aria-label="关闭申请详情弹窗">×</button></div><div id="request-detail-list" class="request-detail-list"></div><div class="dialog-actions"><button type="button" id="close-request-detail-action" class="secondary-button">关闭</button><button type="button" id="new-request-from-detail" hidden>发起新申请</button></div></div></dialog>
+  <p id="message" class="message toast-message" aria-live="polite"></p>
+  <script src="../js/auth.js?v=76"></script><script src="../js/api.js?v=30"></script><script src="../js/my-schedule.js?v=32"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

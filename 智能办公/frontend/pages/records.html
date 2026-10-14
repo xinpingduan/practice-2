@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>员工档案</title>
+  <link rel="stylesheet" href="../css/style.css?v=57">
+  <link rel="stylesheet" href="../css/ui-system.css?v=28">
+</head>
+<body data-page="manager" class="access-pending records-screen">
+  <header class="hero"><div class="hero-content"><a class="brand" href="../index.html">EM</a><div class="hero-copy"><p class="eyebrow">EMPLOYEE DIRECTORY</p><h1>员工档案</h1><p>查询和维护员工信息、岗位与在职状态。</p></div><nav class="nav-links"></nav></div></header>
+  <main class="page-container records-page">
+    <section class="card records-card">
+      <div class="records-heading"><div><h2>员工档案列表</h2><p>使用姓名、工号、部门或状态组合筛选。</p></div><span id="employee-count" class="records-count" aria-live="polite">正在加载…</span></div>
+      <form id="employee-filter" class="records-filter" role="search">
+        <label><span>姓名</span><input id="name" autocomplete="off" placeholder="输入姓名"></label>
+        <label><span>工号</span><input id="employee-no" autocomplete="off" placeholder="例如 EMP001"></label>
+        <label><span>部门</span><input id="department" autocomplete="off" placeholder="输入部门"></label>
+        <label><span>在职状态</span><select id="employment-status"><option value="">全部状态</option><option>在职</option><option>待分配</option><option>入职办理中</option><option>交接中</option><option>离职申请中</option><option>已离职</option></select></label>
+        <div class="records-filter-actions"><button id="reset-search" class="secondary-button" type="reset">清空</button><button id="search" type="submit">查询员工</button></div>
+      </form>
+      <div class="table-wrapper records-table-wrapper">
+        <table><thead><tr><th>工号</th><th>姓名</th><th>部门</th><th>岗位</th><th>角色</th><th>状态</th><th class="records-action-col">操作</th></tr></thead><tbody id="employee-list"><tr><td colspan="7" class="empty-tip">正在加载员工档案…</td></tr></tbody></table>
+      </div>
+      <nav class="records-pagination" aria-label="员工列表分页"><button id="page-previous" class="secondary-button" type="button">上一页</button><span id="page-status">第 1 页</span><button id="page-next" class="secondary-button" type="button">下一页</button></nav>
+    </section>
+  </main>
+  <script src="../js/auth.js?v=76"></script><script src="../js/api.js?v=8"></script><script src="../js/records.js?v=9"></script>
+</body>
+</html>
+
+
+
+

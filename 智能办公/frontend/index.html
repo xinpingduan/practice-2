@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/brand-mark.svg">
+  <title>员工登记</title>
+  <link rel="stylesheet" href="css/style.css?v=57">
+  <link rel="stylesheet" href="css/ui-system.css?v=30">
+</head>
+<body data-access="hr" class="access-pending">
+  <header class="hero">
+    <div class="hero-content">
+      <a class="brand" href="#top" aria-label="员工管理">EM</a>
+      <div class="hero-copy">
+        <p class="eyebrow">EMPLOYEE MANAGEMENT</p>
+        <h1>员工管理中心</h1>
+          <p>登记账号后，继续提交入职申请；获批准后再由人事办结入职。</p>
+      </div>
+      <nav class="nav-links" aria-label="主导航">
+        <a class="active" href="index.html">员工登记</a>
+        <a href="pages/onboarding.html">入职分配</a>
+        <a href="pages/queue.html">待办队列</a>
+        <a href="pages/records.html">入职档案</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="page-container">
+    <section class="card registration-card">
+      <div class="card-heading">
+        <div class="heading-icon">+</div>
+        <div>
+          <h2>注册员工</h2>
+          <p>此处只创建账号。部门、岗位与员工/部门经理角色在下一步“入职办理”中确认。</p>
+        </div>
+      </div>
+
+      <form id="register-form">
+        <div class="form-grid">
+          <label><span>姓名 <b>*</b></span>
+            <input id="name" type="text" required placeholder="例如：张三">
+          </label>
+          <label><span>工号</span>
+            <input id="employee-no" type="text" value="系统自动生成" readonly aria-describedby="employee-no-hint">
+            <small id="employee-no-hint">员工注册完成后由系统按 EMP 数字序列自动分配</small>
+          </label>
+          <label><span>密码 <b>*</b></span>
+            <input id="password" type="password" required minlength="8" placeholder="至少8位，含大小写、数字和特殊字符">
+          </label>
+          <label><span>确认密码 <b>*</b></span>
+            <input id="confirm-password" type="password" required minlength="8" placeholder="请再次输入密码">
+          </label>
+          <label><span>手机号 <b>*</b></span>
+            <input id="phone" type="tel" required placeholder="例如：13800138000">
+          </label>
+          <label><span>邮箱 <em>可选</em></span>
+            <input id="email" type="email" placeholder="例如：name@example.com">
+          </label>
+        </div>
+        <div class="form-footer">
+          <p class="description">密码至少 8 位，且需包含大写字母、小写字母、数字和特殊字符；员工数据将保存到 MySQL 数据库。</p>
+          <button type="submit">完成注册 <span>→</span></button>
+        </div>
+      </form>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="card list-card" hidden>
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">REGISTERED EMPLOYEES</p>
+          <h2>员工列表</h2>
+        </div>
+        <button id="refresh-button" class="secondary-button" type="button"><span>↻</span> 刷新列表</button>
+      </div>
+      <p id="empty-tip" class="empty-tip">暂时没有注册员工。</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>编号</th><th>姓名</th><th>工号</th><th>手机号</th>
+              <th>邮箱</th><th>角色</th>
+            </tr>
+          </thead>
+          <tbody id="employee-list"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="js/auth.js?v=76"></script>
+  <script src="js/api.js?v=20"></script>
+  <script src="js/employee.js?v=21"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

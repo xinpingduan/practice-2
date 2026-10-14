@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>入职智能分配</title><link rel="stylesheet" href="../css/style.css?v=57"><link rel="stylesheet" href="../css/ui-system.css?v=28"></head>
+<body data-page="manager" class="access-pending"><header class="hero"><div class="hero-content"><a class="brand" href="../index.html">EM</a><div class="hero-copy"><p class="eyebrow">ONBOARDING WORKFLOW</p><h1>入职智能分配</h1><p>根据岗位和部门自动分配办理类别与优先级。</p></div><nav class="nav-links"><a href="../index.html">员工登记</a><a class="active" href="onboarding.html">入职分配</a><a href="queue.html">待办队列</a><a href="records.html">入职档案</a></nav></div></header>
+<main class="page-container"><section class="card"><div class="card-heading"><div class="heading-icon">+</div><div><h2>发起入职办理</h2><p>请选择员工、部门、岗位与角色后完成分配。</p></div></div><form id="onboarding-form"><div class="form-grid"><label><span>员工 <b>*</b></span><select id="employee-id" required><option value="">请先选择员工</option></select></label><label><span>部门 <b>*</b></span><select id="department" required><option value="">请选择部门</option><option>技术部</option><option>产品部</option><option>运营部</option><option>市场部</option><option>人力资源部</option><option>财务部</option><option>行政部</option><option>生产部</option></select></label><label><span>岗位 <b>*</b></span><select id="position" required><option value="">请选择岗位</option><option>前端开发工程师</option><option>后端开发工程师</option><option>产品经理</option><option>测试工程师</option><option>运维工程师</option><option>网络工程师</option><option>信息安全工程师</option><option>人事专员</option><option>行政专员</option><option>财务专员</option><option>销售专员</option><option>生产操作员</option></select></label><label><span>角色 <b>*</b></span><select id="role" required><option value="employee">普通员工（后续查看个人班表与待办）</option><option value="department_admin">部门管理员（后续管理本部门班表）</option></select></label></div><div class="form-footer"><p class="description">所有分配信息均从列表选择，不需要手工输入。</p><button type="submit">完成入职分配 <span>→</span></button></div></form><p id="message" class="message" aria-live="polite"></p></section>
+<section class="card list-card"><div class="section-title"><div><p class="eyebrow">AUTO ASSIGNMENT RESULT</p><h2>网络公司分配规则</h2></div></div><div class="rule-list"><p>岗位含“运维、安全、SRE、网络工程师”：账号与权限开通（紧急）</p><p>技术、研发或产品部门员工：研发环境配置（普通）</p><p>其他部门员工：行政入职办理（普通）</p></div></section></main><script src="../js/auth.js?v=76"></script><script src="../js/api.js?v=5"></script><script src="../js/onboarding.js?v=5"></script></body></html>
+
+
+
+
+
+
+
+
+
+
+
+

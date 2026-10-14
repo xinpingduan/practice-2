@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工作台</title>
+  <link rel="stylesheet" href="../css/style.css?v=57">
+  <link rel="stylesheet" href="../css/ui-system.css?v=28">
+</head>
+<body data-access="logged-in" class="access-pending">
+  <header class="hero"><div class="hero-content"><a class="brand" href="profile.html">EM</a><div class="hero-copy"><p class="eyebrow">WORKSPACE</p><h1>工作台</h1><p id="workspace-subtitle">正在整理今天需要处理的事项。</p></div><nav class="nav-links"></nav></div></header>
+  <main class="page-container workspace-page">
+    <section class="workspace-welcome">
+      <div class="workspace-welcome-copy"><p class="eyebrow">TODAY AT A GLANCE</p><h2 id="welcome-title">你好</h2><p id="welcome-copy">这里展示与你的角色相关的下一步工作。</p></div>
+      <aside class="workspace-focus" aria-labelledby="workspace-focus-title"><div class="workspace-focus-head"><span>今日工作重点</span><div id="role-chip" class="role-chip">—</div></div><strong id="workspace-focus-title">正在整理优先事项</strong><p id="workspace-focus-copy">请稍候，系统正在读取与你角色相关的数据。</p><a id="workspace-focus-link" href="#workspace-actions">查看下一步 <span aria-hidden="true">→</span></a></aside>
+    </section>
+    <section id="workspace-metrics" class="workspace-metrics" aria-label="工作概览"></section>
+    <section class="workspace-grid">
+      <section class="card workspace-actions"><div class="section-title"><div><p class="eyebrow">NEXT ACTIONS</p><h2>下一步</h2></div></div><div id="workspace-actions" class="action-list"><p class="empty-tip">加载中…</p></div></section>
+      <section class="card account-card"><div class="section-title"><div><p class="eyebrow">MY ACCOUNT</p><h2>账户信息</h2></div></div><div id="profile-content" class="profile-grid"></div></section>
+    </section>
+  </main>
+  <script src="../js/auth.js?v=76"></script><script src="../js/api.js?v=27"></script><script src="../js/profile.js?v=28"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

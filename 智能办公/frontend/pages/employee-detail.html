@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>员工档案</title><link rel="stylesheet" href="../css/style.css?v=57"><link rel="stylesheet" href="../css/ui-system.css?v=28"></head>
+<body data-access="hr" class="access-pending"><header class="hero"><div class="hero-content"><a class="brand" href="records.html">EM</a><div class="hero-copy"><p class="eyebrow">EMPLOYEE PROFILE</p><h1>员工档案</h1><p>维护部门与岗位；离职申请需提交超级管理员最终批准。</p></div><nav class="nav-links"></nav></div></header>
+<main class="page-container"><section class="card"><div class="card-heading"><div class="heading-icon">↗</div><div><h2>调整员工信息</h2><p>人事可设置普通员工或部门经理，超级管理员账户不在此处维护。</p></div></div><form id="form"><div class="form-grid"><label><span>部门 <b>*</b></span><select id="department" required><option value="">请选择部门</option><option>技术部</option><option>产品部</option><option>运营部</option><option>市场部</option><option>人力资源部</option><option>财务部</option><option>行政部</option><option>生产部</option></select></label><label><span>岗位 <b>*</b></span><select id="position" required><option value="">请选择岗位</option><option>前端开发工程师</option><option>后端开发工程师</option><option>产品经理</option><option>测试工程师</option><option>运维工程师</option><option>网络工程师</option><option>信息安全工程师</option><option>人事专员</option><option>行政专员</option><option>财务专员</option><option>销售专员</option><option>生产操作员</option></select></label><label><span>岗位权限</span><select id="role"><option value="employee">普通员工</option><option value="department_admin">部门经理</option></select></label><label><span>后续事项</span><select id="action"><option value="profile_update">通知档案变更</option><option value="handover">发起工作交接</option><option value="offboarding">发起离职申请（需超管批准）</option></select></label><label class="full-width"><span>事项说明</span><textarea id="task-content" maxlength="500" placeholder="向员工说明此次变更或需要完成的交接事项。"></textarea></label></div><div class="form-footer"><a class="secondary-button" href="records.html">返回员工列表</a><button type="submit">保存并发起事项</button></div></form><p id="message" class="message" aria-live="polite"></p></section></main><script src="../js/auth.js?v=76"></script><script src="../js/api.js?v=20"></script><script src="../js/employee-detail.js?v=20"></script></body></html>
+
+
+
+
+
+
+
+
+
+
+
+

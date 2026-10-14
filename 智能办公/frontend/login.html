@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>员工管理中心 - 登录</title>
+  <link rel="icon" type="image/svg+xml" href="assets/brand-mark.svg">
+  <link rel="stylesheet" href="css/style.css?v=57">
+  <link rel="stylesheet" href="css/ui-system.css?v=29">
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <section class="login-showcase" aria-labelledby="showcase-title">
+      <div class="showcase-copy">
+        <p class="showcase-kicker"><span></span> EM OPERATIONS SPACE</p>
+        <h2 id="showcase-title">让每一次协作<br>都在同一节奏里</h2>
+        <p>人员、流程与排班汇聚在一个实时工作空间，让团队状态清晰可见。</p>
+      </div>
+      <div class="login-feature-strip" aria-label="系统能力">
+        <article><span>01</span><strong>智能排班</strong><small>周期与规则自动校验</small></article>
+        <article><span>02</span><strong>人事协同</strong><small>入转调离全程衔接</small></article>
+        <article><span>03</span><strong>实时洞察</strong><small>重要事项一目了然</small></article>
+      </div>
+      <div class="login-visual" aria-hidden="true">
+        <div class="visual-floor"></div>
+        <div class="module-cube">
+          <div class="cube-face cube-front"><span>▦</span><strong>排班</strong></div>
+          <div class="cube-face cube-back"><span>◎</span><strong>协作</strong></div>
+          <div class="cube-face cube-right"><span>↗</span><strong>洞察</strong></div>
+          <div class="cube-face cube-left"><span>◇</span><strong>人员</strong></div>
+          <div class="cube-face cube-top"></div>
+          <div class="cube-face cube-bottom"></div>
+        </div>
+        <article class="visual-tile visual-tile--top"><i>✓</i><span><small>流程状态</small><strong>全部正常</strong></span></article>
+        <article class="visual-tile visual-tile--left"><i>24</i><span><small>今日在岗</small><strong>人员就绪</strong></span></article>
+        <article class="visual-tile visual-tile--right"><i>↑</i><span><small>协同效率</small><strong>持续提升</strong></span></article>
+      </div>
+    </section>
+
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="login-card-topline"><div class="brand"><img class="brand-mark" src="assets/brand-mark.svg" alt="EM"></div><span>SECURE WORKSPACE</span></div>
+      <p class="eyebrow">EMPLOYEE MANAGEMENT</p>
+      <h1 id="login-title">欢迎回来</h1>
+      <p class="description">登录员工管理中心，继续处理今天的工作。</p>
+      <form id="login-form">
+        <label><span>工号 <b>*</b></span><span class="input-shell"><i aria-hidden="true">◇</i><input id="employee-no" required autocomplete="username" placeholder="例如：EMP001"></span></label>
+        <label><span>密码 <b>*</b></span><span class="password-field input-shell"><i aria-hidden="true">⌁</i><input id="password" type="password" required autocomplete="current-password" placeholder="请输入密码"><button id="toggle-password" class="password-toggle" type="button" aria-label="显示密码" aria-pressed="false">显示</button></span></label>
+        <button id="login-submit" type="submit"><span class="login-button-label">进入工作空间</span> <span aria-hidden="true">→</span></button>
+      </form>
+      <div class="login-security"><span>◉</span><p><strong>安全连接</strong><small>会话与数据传输已受到保护</small></p></div>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="js/login.js?v=14"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

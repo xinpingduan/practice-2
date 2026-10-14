@@ -1,0 +1,45 @@
+/* Assistant-only overrides loaded after the legacy shared button rules. */
+.assistant-panel {
+  grid-template-rows: auto minmax(0, 1fr) auto !important;
+}
+.assistant-panel.has-memory-settings {
+  grid-template-rows: auto minmax(0, 1fr) auto !important;
+}
+.assistant-messages { min-height: 0 !important; }
+.assistant-settings-toggle.icon-button svg {
+  width: 18px; height: 18px; fill: none; stroke: currentColor;
+  stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8;
+}
+.assistant-conversation-item,
+body:not(.login-page) .assistant-conversation-item {
+  display: grid !important;
+  width: 100% !important;
+  min-height: 62px !important;
+  gap: 4px !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 9px !important;
+  padding: 10px 12px 10px 15px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+  color: #172033 !important;
+  text-align: left !important;
+  transform: none !important;
+}
+.assistant-conversation-item:hover,
+.assistant-conversation-item.is-active,
+body:not(.login-page) .assistant-conversation-item:hover,
+body:not(.login-page) .assistant-conversation-item.is-active {
+  border-color: #bfdbfe !important;
+  background: #eff6ff !important;
+  color: #172033 !important;
+}
+.assistant-conversation-item strong { color: #172033 !important; font-size: 13px !important; }
+.assistant-conversation-item span { color: #64748b !important; font-size: 11px !important; }
+.assistant-conversation-actions input { min-height: 42px !important; border-radius: 9px !important; }
+
+@media (max-width: 640px) {
+  .assistant-panel,
+  .assistant-panel.has-memory-settings {
+    grid-template-rows: auto minmax(0, 1fr) auto !important;
+  }
+}

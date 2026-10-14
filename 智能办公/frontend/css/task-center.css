@@ -1,0 +1,14 @@
+.task-center-page { display: grid; gap: 20px; }
+.task-publish-card form { margin-top: 18px; }
+.task-publish-card .form-footer { align-items: center; }
+#task-employees { display: grid; max-height: 220px; gap: 6px; overflow-y: auto; padding: 8px; border: 1px solid var(--ui-line); border-radius: 10px; background: var(--ui-surface-soft); }
+.task-employee-picker label { display: flex; min-height: 40px; align-items: center; gap: 9px; padding: 6px 8px; border-radius: 7px; background: var(--ui-surface); }
+.task-employee-picker label:hover { background: var(--ui-brand-soft); }
+.task-employee-picker input { width: 17px; height: 17px; flex: 0 0 auto; }
+.task-employee-picker span { display: grid; gap: 2px; min-width: 0; color: var(--ui-text); font-size: 13px; font-weight: 700; }
+.task-employee-picker small { color: var(--ui-text-muted); font-size: 11px; font-weight: 500; }
+.task-published-item small { display: block; margin-top: 8px; color: var(--ui-text-muted); }
+@media (max-width: 640px) {
+  .task-publish-card .form-footer { align-items: stretch; flex-direction: column; }
+  .task-publish-card .form-footer button { width: 100%; }
+}

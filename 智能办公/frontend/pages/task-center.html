@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>待办中心</title>
+  <link rel="stylesheet" href="../css/style.css?v=57"><link rel="stylesheet" href="../css/ui-system.css?v=29"><link rel="stylesheet" href="../css/task-center.css?v=1">
+</head>
+<body data-access="task-publisher" class="access-pending">
+  <header class="hero"><div class="hero-content"><a class="brand" href="profile.html">EM</a><div class="hero-copy"><p class="eyebrow">TASK CENTER</p><h1>待办中心</h1><p>发布工作事项，并追踪员工处理进度。</p></div><nav class="nav-links"></nav></div></header>
+  <main class="page-container task-center-page">
+    <section class="card task-publish-card">
+      <div class="section-title"><div><p class="eyebrow">PUBLISH TASK</p><h2>发布新待办</h2><p class="description">员工提交处理结果后，任务会自动标记为已完成。</p></div></div>
+      <form id="manual-task-form">
+        <div class="form-grid">
+          <label class="full-width"><span>接收范围 <b>*</b></span><select id="task-target-type"><option value="department">整个部门</option><option value="employee">指定员工</option></select></label>
+          <label id="task-department-field"><span>目标部门 <b>*</b></span><select id="task-department" required><option value="">加载中…</option></select></label>
+          <label id="task-employees-field" class="task-employees-field" hidden><span>指定员工 <b>*</b></span><div id="task-employees" class="task-employee-picker"></div><small class="form-hint">可直接勾选一名或多名员工。</small></label>
+          <label><span>优先级 <b>*</b></span><select id="task-priority"><option>普通</option><option>重要</option><option>紧急</option></select></label>
+          <label><span>截止日期</span><input id="task-due-date" type="date"></label>
+          <label class="full-width"><span>标题 <b>*</b></span><input id="task-title" maxlength="100" required placeholder="例如：完成本周安全培训"></label>
+          <label class="full-width"><span>待办内容 <b>*</b></span><textarea id="task-content" maxlength="1000" required placeholder="说明需要完成的事项、提交标准和注意事项"></textarea></label>
+        </div>
+        <div class="form-footer"><span id="task-target-count" class="description">请选择接收范围</span><button id="publish-task" type="submit">发布待办</button></div>
+      </form>
+      <p id="task-message" class="message" aria-live="polite"></p>
+    </section>
+    <section class="card"><div class="section-title"><div><p class="eyebrow">PUBLISHED TASKS</p><h2>发布记录</h2><p id="task-summary" class="description">加载中…</p></div><button id="refresh-published" class="secondary-button" type="button">刷新</button></div><div id="published-task-list" class="request-list"><p class="empty-tip">加载中…</p></div></section>
+  </main>
+  <script src="../js/auth.js?v=76"></script><script src="../js/api.js?v=38"></script><script src="../js/task-center.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>部门审批</title>
+  <link rel="stylesheet" href="../css/style.css?v=57">
+  <link rel="stylesheet" href="../css/ui-system.css?v=30">
+</head>
+<body data-access="department-admin" class="access-pending">
+  <header class="hero"><div class="hero-content"><a class="brand" href="profile.html">EM</a><div class="hero-copy"><p class="eyebrow">DEPARTMENT REVIEW</p><h1>部门审批</h1><p>审批本部门员工的班次调整和请假申请；批准前系统会重新校验工时与班间休息。</p></div><nav class="nav-links"></nav></div></header>
+  <main class="page-container"><section class="card"><div class="card-heading"><div class="heading-icon">✓</div><div><h2>待审批申请</h2><p>这里仅列出当前由你初审的员工申请；已转人事处理的请假会在下方只读显示。</p></div></div><div id="department-leave-overview" class="department-leave-overview" aria-live="polite"></div><div id="department-request-list" class="request-list"><p class="empty-tip">加载中…</p></div><section id="department-other-leaves" class="department-other-leaves" hidden></section></section></main>
+  <dialog id="review-dialog"><form id="review-form"><div class="dialog-heading"><div><p class="eyebrow">DEPARTMENT REVIEW</p><h2 id="review-title">审批申请</h2></div><button type="button" class="icon-button" id="close-review" aria-label="关闭">×</button></div><label>审批意见<textarea id="review-note" maxlength="500" placeholder="可选，填写审批说明"></textarea></label><div class="dialog-actions"><button type="button" class="secondary-button" id="reject-request">驳回</button><button type="submit">批准并同步日历</button></div></form></dialog>
+  <p id="message" class="message toast-message" aria-live="polite"></p>
+  <script src="../js/auth.js?v=76"></script><script src="../js/api.js?v=30"></script><script src="../js/department-requests.js?v=31"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

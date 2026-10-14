@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>我的待办</title>
+  <link rel="stylesheet" href="../css/style.css?v=57">
+  <link rel="stylesheet" href="../css/ui-system.css?v=28">
+</head>
+<body data-access="logged-in" class="access-pending">
+  <header class="hero"><div class="hero-content">
+    <a class="brand" href="profile.html">EM</a>
+    <div class="hero-copy"><p class="eyebrow">MY TASKS</p><h1>我的待办</h1><p>处理个人事项、交接和离职申请。</p></div>
+    <nav class="nav-links"></nav>
+  </div></header>
+  <main class="page-container">
+    <section id="offboarding" class="card">
+      <div class="section-title"><div>
+        <p class="eyebrow">OFFBOARDING</p><h2>离职申请</h2>
+        <p class="description">部门经理审批 → 老板批准 → 员工交接 → 人事审核。</p>
+      </div><button id="open-offboarding" type="button">发起离职申请</button></div>
+    </section>
+    <section class="card">
+      <div class="section-title"><div><p class="eyebrow">ACTION REQUIRED</p><h2>需要我处理</h2></div><button id="refresh" class="secondary-button" type="button">刷新</button></div>
+      <div id="tasks" class="request-list"><p class="empty-tip">加载中…</p></div>
+    </section>
+  </main>
+  <dialog id="offboarding-dialog"><form id="offboarding-form">
+    <div class="dialog-heading"><div><p class="eyebrow">OFFBOARDING REQUEST</p><h2>发起离职申请</h2><p>提交后先由部门经理审批。</p></div><button type="button" class="icon-button" id="close-offboarding">×</button></div>
+    <label>离职原因<textarea id="offboarding-reason" required maxlength="500"></textarea></label>
+    <div class="dialog-actions"><button type="button" class="secondary-button" id="cancel-offboarding">取消</button><button type="submit">提交申请</button></div>
+  </form></dialog>
+  <dialog id="task-dialog"><form id="task-form">
+    <div class="dialog-heading"><div><p class="eyebrow">COMPLETE TASK</p><h2 id="task-title">提交处理结果</h2></div><button type="button" class="icon-button" id="close-task">×</button></div>
+    <label>处理说明<textarea id="task-content" required maxlength="500"></textarea></label>
+    <div class="dialog-actions"><button type="button" class="secondary-button" id="cancel-task">取消</button><button type="submit">提交结果</button></div>
+  </form></dialog>
+  <p id="message" class="message toast-message" aria-live="polite"></p>
+  <script src="../js/auth.js?v=76"></script>
+  <script src="../js/api.js?v=31"></script>
+  <script src="../js/my-todos.js?v=32"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

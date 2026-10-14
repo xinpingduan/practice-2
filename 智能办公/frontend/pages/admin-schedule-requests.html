@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>人事特殊申请</title><link rel="stylesheet" href="../css/style.css?v=57"><link rel="stylesheet" href="../css/ui-system.css?v=28"></head>
+<body data-access="hr" class="access-pending"><header class="hero"><div class="hero-content"><a class="brand" href="profile.html">EM</a><div class="hero-copy"><p class="eyebrow">HR EXCEPTION REVIEW</p><h1>特殊申请</h1><p>处理部门经理本人提交的请假和班次调整；终审时会基于最新班表重新校验。</p></div><nav class="nav-links"></nav></div></header>
+<main class="page-container"><section class="card"><div class="card-heading"><div class="heading-icon">✓</div><div><h2>待人事审批</h2><p>批准后立即同步到对应员工的个人班次日历。</p></div></div><div id="admin-request-list" class="request-list"><p class="empty-tip">加载中…</p></div></section></main>
+<dialog id="review-dialog"><form id="review-form"><div class="dialog-heading"><div><p class="eyebrow">HR REVIEW</p><h2 id="review-title">审批申请</h2></div><button type="button" class="icon-button" id="close-review" aria-label="关闭">×</button></div><label>人事意见<textarea id="review-note" maxlength="500" placeholder="可选，填写审批说明"></textarea></label><div class="dialog-actions"><button type="button" class="secondary-button" id="reject-request">驳回</button><button type="submit">批准并同步日历</button></div></form></dialog><p id="message" class="message toast-message" aria-live="polite"></p>
+<script src="../js/auth.js?v=76"></script><script src="../js/api.js?v=15"></script><script src="../js/admin-schedule-requests.js?v=15"></script></body></html>
+
+
+
+
+
+
+
+
+
+
+
+

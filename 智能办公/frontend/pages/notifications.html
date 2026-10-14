@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>消息中心</title>
+  <link rel="stylesheet" href="../css/style.css?v=57">
+  <link rel="stylesheet" href="../css/ui-system.css?v=28">
+</head>
+<body data-access="logged-in" class="access-pending">
+  <header class="hero"><div class="hero-content"><a class="brand" href="profile.html">EM</a><div class="hero-copy"><p class="eyebrow">NOTIFICATION CENTER</p><h1>消息中心</h1><p>集中查看班表、申请和审批进度提醒。</p></div><nav class="nav-links" aria-label="主导航"></nav></div></header>
+  <main class="page-container notification-page">
+    <section class="card notification-center">
+      <div class="notification-heading"><div><p class="eyebrow">INBOX</p><h2>我的消息</h2><p class="description">未读消息会优先突出显示，打开业务详情后自动标记为已读。</p></div><span id="notification-count" class="notification-count">加载中…</span></div>
+      <div class="notification-toolbar">
+        <div class="notification-filter" role="group" aria-label="消息筛选"><button class="active" type="button" data-filter="all" aria-pressed="true">全部</button><button type="button" data-filter="unread" aria-pressed="false">只看未读</button></div>
+        <div class="button-group"><button id="refresh-notifications" class="secondary-button" type="button">刷新</button><button id="read-all-notifications" type="button">全部已读</button></div>
+      </div>
+      <div id="notification-list" class="notification-list" aria-live="polite"><div class="notification-loading"><i></i><i></i><i></i></div></div>
+    </section>
+  </main>
+  <p id="message" class="message toast-message" aria-live="polite"></p>
+  <script src="../js/auth.js?v=76"></script><script src="../js/api.js?v=31"></script><script src="../js/notifications.js?v=31"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

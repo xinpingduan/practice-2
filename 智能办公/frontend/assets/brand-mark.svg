@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title>EM 员工管理</title>
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1674ed"/><stop offset="1" stop-color="#124bb7"/></linearGradient>
+    <linearGradient id="highlight" x1="0" x2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d9f4ff"/></linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="54" fill="url(#background)"/>
+  <g fill="none" stroke="url(#highlight)" stroke-linecap="round" stroke-width="23">
+    <path d="M69 150A75 75 0 0 1 147 58"/>
+    <path d="M189 105A75 75 0 0 1 178 168"/>
+    <path d="M158 190A75 75 0 0 1 85 169"/>
+  </g>
+  <circle cx="172" cy="75" r="17" fill="#12e4ee"/>
+</svg>

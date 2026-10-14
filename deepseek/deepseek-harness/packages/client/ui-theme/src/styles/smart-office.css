@@ -1,0 +1,168 @@
+/* Smart Office follows the management system's navy, blue and glass palette. */
+body[data-dsh-smart-office] {
+  color-scheme: light;
+  background: #f4f7fc;
+  color: #17243d;
+  --dsw-alias-bg-base: #f4f7fc;
+  --dsw-alias-bg-layer-1: #ffffff;
+  --dsw-alias-bg-layer-2: #ffffff;
+  --dsw-alias-bg-layer-3: #f8faff;
+  --dsw-alias-bg-layer-4: #eef4ff;
+  --dsw-alias-bg-mask-1: rgb(14 29 55 / 34%);
+  --dsw-alias-bg-mask-2: rgb(14 29 55 / 18%);
+  --dsw-alias-bg-module-platform: #edf3ff;
+  --dsw-alias-bg-multi-select: #edf3ff;
+  --dsw-alias-bg-overlay: #e8effc;
+  --dsw-alias-bg-skeleton: rgb(23 36 61 / 7%);
+  --dsw-alias-border-l1: rgb(57 102 190 / 12%);
+  --dsw-alias-border-l2: rgb(57 102 190 / 20%);
+  --dsw-alias-border-l3: rgb(57 102 190 / 30%);
+  --dsw-alias-border-l4: rgb(57 102 190 / 42%);
+  --dsw-alias-brand-primary: #2463e9;
+  --dsw-alias-brand-text: #172b52;
+  --dsw-alias-button-primary-fill: #2463e9;
+  --dsw-alias-button-primary-hover: #1b50c3;
+  --dsw-alias-button-info-fill: #2463e9;
+  --dsw-alias-button-info-hover: #1b50c3;
+  --dsw-alias-button-elevated-fill: #ffffff;
+  --dsw-alias-button-floating-fill: #ffffff;
+  --dsw-alias-button-floating-hover: #eef4ff;
+  --dsw-alias-interactive-bg-active: rgb(36 99 233 / 15%);
+  --dsw-alias-interactive-bg-hover: rgb(36 99 233 / 8%);
+  --dsw-alias-interactive-bg-hover-accent: rgb(36 99 233 / 13%);
+  --dsw-alias-interactive-bg-hover-solid: #edf3ff;
+  --dsw-alias-label-primary: #17243d;
+  --dsw-alias-label-primary-bluish: #173b80;
+  --dsw-alias-label-primary-dimmed: #8a9ab5;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-secondary: #526582;
+  --dsw-alias-label-tertiary: #73839d;
+  --dsw-alias-label-caption: #8392aa;
+  --dsw-alias-label-dimmed: #aab7ca;
+  --dsw-alias-state-business-primary: #2463e9;
+  --dsw-alias-state-business-tertiary: #dce8ff;
+  --dsw-alias-state-error-primary: #d9364f;
+  --dsw-alias-state-warn-label: #a96800;
+  --dsw-alias-scrollbar-bg-l1: #c4d2eb;
+  --dsw-alias-scrollbar-bg-l2: #b3c4e2;
+  --dsw-alias-scrollbar-hover-l1: #9db2d6;
+  --dsw-alias-scrollbar-hover-l2: #8da6d0;
+  --dsw-alias-toast-bg: #172b52;
+  --dsw-alias-tooltip-bg: #172b52;
+  --dsw-specific-bubble: #eaf1ff;
+  --dsw-specific-bubble-highlight: #cfe0ff;
+  --dsw-specific-input-major: #ffffff;
+  --dsw-specific-login-input: #f8faff;
+  --dsw-specific-menu: #ffffff;
+  --dsw-specific-selector: #edf3ff;
+  --dsw-specific-sidebar-fill: rgb(23 43 82 / 94%);
+  --dsw-specific-sidebar-nav-item-active: rgb(71 130 244 / 34%);
+  --dsw-specific-sidebar-nav-item-active-accent: #5d91f6;
+  --dsw-specific-sidebar-nav-item-hover: rgb(71 130 244 / 18%);
+  --dsw-specific-tip: #edf3ff;
+}
+
+body[data-dsh-smart-office] [role='dialog'] {
+  --dsw-alias-bg-base: #f4f7fc;
+  --dsw-alias-bg-layer-1: #ffffff;
+  --dsw-alias-bg-layer-2: #ffffff;
+  --dsw-alias-bg-layer-3: #f8faff;
+  --dsw-alias-bg-layer-4: #eef4ff;
+  --dsw-alias-bg-mask-1: rgb(14 29 55 / 34%);
+  --dsw-alias-border-l1: rgb(57 102 190 / 12%);
+  --dsw-alias-border-l2: rgb(57 102 190 / 20%);
+  --dsw-alias-border-l3: rgb(57 102 190 / 30%);
+  --dsw-alias-border-l4: rgb(57 102 190 / 42%);
+  --dsw-alias-interactive-bg-active: rgb(36 99 233 / 15%);
+  --dsw-alias-interactive-bg-hover: rgb(36 99 233 / 8%);
+  --dsw-alias-interactive-bg-hover-accent: rgb(36 99 233 / 13%);
+  --dsw-alias-label-primary: #17243d;
+  --dsw-alias-label-primary-bluish: #173b80;
+  --dsw-alias-label-primary-dimmed: #8a9ab5;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-label-secondary: #526582;
+  --dsw-alias-label-tertiary: #73839d;
+  --dsw-alias-label-caption: #8392aa;
+  --dsw-alias-label-dimmed: #aab7ca;
+  --dsw-specific-input-major: #ffffff;
+  --dsw-specific-menu: #ffffff;
+  --dsw-specific-selector: #edf3ff;
+  color: var(--dsw-alias-label-primary);
+}
+
+body[data-dsh-smart-office] input,
+body[data-dsh-smart-office] textarea,
+body[data-dsh-smart-office] select {
+  color: var(--dsw-alias-label-primary);
+}
+
+body[data-dsh-smart-office] button:focus-visible,
+body[data-dsh-smart-office] a:focus-visible,
+body[data-dsh-smart-office] input:focus-visible,
+body[data-dsh-smart-office] textarea:focus-visible,
+body[data-dsh-smart-office] select:focus-visible {
+  outline-color: #2463e9;
+}
+
+body[data-dsh-smart-office][data-ds-dark-theme] {
+  color-scheme: dark;
+  background: #111d35;
+  color: #edf3ff;
+  --dsw-alias-bg-base: #111d35;
+  --dsw-alias-bg-layer-1: #172746;
+  --dsw-alias-bg-layer-2: #1b2e51;
+  --dsw-alias-bg-layer-3: #20365d;
+  --dsw-alias-bg-layer-4: #27436e;
+  --dsw-alias-bg-mask-1: rgb(2 8 21 / 58%);
+  --dsw-alias-bg-mask-2: rgb(2 8 21 / 32%);
+  --dsw-alias-bg-module-platform: #20365d;
+  --dsw-alias-bg-multi-select: #20365d;
+  --dsw-alias-bg-overlay: #27436e;
+  --dsw-alias-border-l1: rgb(172 199 255 / 14%);
+  --dsw-alias-border-l2: rgb(172 199 255 / 22%);
+  --dsw-alias-border-l3: rgb(172 199 255 / 32%);
+  --dsw-alias-border-l4: rgb(172 199 255 / 44%);
+  --dsw-alias-brand-primary: #7ca8ff;
+  --dsw-alias-brand-text: #eaf1ff;
+  --dsw-alias-button-primary-fill: #3c75ec;
+  --dsw-alias-button-primary-hover: #5889f4;
+  --dsw-alias-button-info-fill: #3c75ec;
+  --dsw-alias-button-info-hover: #5889f4;
+  --dsw-alias-button-elevated-fill: #20365d;
+  --dsw-alias-button-floating-fill: #20365d;
+  --dsw-alias-button-floating-hover: #27436e;
+  --dsw-alias-interactive-bg-active: rgb(124 168 255 / 20%);
+  --dsw-alias-interactive-bg-hover: rgb(124 168 255 / 12%);
+  --dsw-alias-interactive-bg-hover-accent: rgb(124 168 255 / 18%);
+  --dsw-alias-interactive-bg-hover-solid: #27436e;
+  --dsw-alias-label-primary: #f2f6ff;
+  --dsw-alias-label-primary-bluish: #d7e5ff;
+  --dsw-alias-label-primary-dimmed: #91a5c9;
+  --dsw-alias-label-primary-foreground: #ffffff;
+  --dsw-alias-label-primary-inverted: #17243d;
+  --dsw-alias-label-secondary: #bfd0ef;
+  --dsw-alias-label-tertiary: #9eb3d7;
+  --dsw-alias-label-caption: #91a5c9;
+  --dsw-alias-label-dimmed: #7186ad;
+  --dsw-alias-state-business-primary: #7ca8ff;
+  --dsw-alias-state-business-tertiary: #294b82;
+  --dsw-alias-scrollbar-bg-l1: #4c6795;
+  --dsw-alias-scrollbar-bg-l2: #5c78aa;
+  --dsw-alias-scrollbar-hover-l1: #6f8bc0;
+  --dsw-alias-scrollbar-hover-l2: #7c99d0;
+  --dsw-alias-toast-bg: #eaf1ff;
+  --dsw-alias-tooltip-bg: #eaf1ff;
+  --dsw-specific-bubble: #294b82;
+  --dsw-specific-bubble-highlight: #3a62a3;
+  --dsw-specific-input-major: #172746;
+  --dsw-specific-login-input: #20365d;
+  --dsw-specific-menu: #1b2e51;
+  --dsw-specific-selector: #27436e;
+  --dsw-specific-sidebar-fill: rgb(10 25 52 / 96%);
+  --dsw-specific-sidebar-nav-item-active: rgb(91 145 246 / 34%);
+  --dsw-specific-sidebar-nav-item-active-accent: #7ca8ff;
+  --dsw-specific-sidebar-nav-item-hover: rgb(91 145 246 / 20%);
+  --dsw-specific-tip: #20365d;
+}
